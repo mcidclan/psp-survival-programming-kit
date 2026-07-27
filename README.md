@@ -14,6 +14,11 @@ Noting that this project is free of Newlib and relies on native system APIs with
 
 # Installation
 ```
+sudo apt update
+sudo apt install gcc-mipsel-linux-gnu binutils-mipsel-linux-gnu
+```
+
+```
 ./build.sh
 echo "export SPKIT_ROOT=\"$(pwd)\"" >> ~/.bashrc
 tail -1 ~/.bashrc

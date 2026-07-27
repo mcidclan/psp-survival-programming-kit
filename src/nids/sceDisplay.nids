@@ -1,0 +1,2 @@
+sceDisplaySetFrameBuf 0x289D82FE
+sceDisplaySetMode 0x0E20F177

@@ -1,0 +1,7 @@
+sceKernelCreateThread 0x446D8DE6
+sceKernelStartThread 0xF475845D
+sceKernelExitDeleteThread 0x809CE29B
+sceKernelGetThreadId 0x293B45B8
+sceKernelReferThreadStatus 0x17C1684E
+sceKernelGetThreadStackFreeSize 0x52089CA1
+sceKernelDelayThread 0xCEADEB47
