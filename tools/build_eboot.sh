@@ -81,14 +81,16 @@ echo "  -> $(realpath --relative-to="$ROOT_DIR" "$BUILD_DIR/$APP_NAME.elf")"
 echo "Patching module name"
 python3 "$ROOT_DIR/tools/modname.py" "$BUILD_DIR/$APP_NAME.elf" "$MODULE_NAME"
 
-psp-fixup-imports "$BUILD_DIR/$APP_NAME.elf"
-echo "fixup done"
+#psp-fixup-imports "$BUILD_DIR/$APP_NAME.elf"
+#echo "fixup done"
 
 psp-prxgen "$BUILD_DIR/$APP_NAME.elf" "$BUILD_DIR/$APP_NAME.prx"
 echo "  -> $(realpath --relative-to="$ROOT_DIR" "$BUILD_DIR/$APP_NAME.prx")"
 
 echo "[4/5] Packaging EBOOT.PBP"
-mksfo "$DISPLAY_NAME" "$BUILD_DIR/PARAM.SFO" > /dev/null
+#mksfo "$DISPLAY_NAME" "$BUILD_DIR/PARAM.SFO" > /dev/null
+python3 "$ROOT_DIR/tools/min_sfo.py" "$DISPLAY_NAME" "$BUILD_DIR/PARAM.SFO"
+
 pack-pbp "$BUILD_DIR/EBOOT.PBP" \
   "$BUILD_DIR/PARAM.SFO" \
   NULL \

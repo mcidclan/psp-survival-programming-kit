@@ -4,9 +4,7 @@ A small experimental project to preserve a simple and lightweight way to compile
 
 Before using this kit and compile the sample codes, make sure the required build and packaging tools are installed and available in your `PATH`:
 - `mipsel-linux-gnu-*`
-- `psp-fixup-imports`
 - `psp-prxgen`
-- `mksfo`
 - `pack-pbp`
 - python3
 
