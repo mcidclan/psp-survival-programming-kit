@@ -1,0 +1,8 @@
+sceCtrlGetSamplingCycle 0x02BAAD91
+sceCtrlSetSamplingCycle 0x6A2774F3
+sceCtrlGetSamplingMode 0xDA6B76A1
+sceCtrlSetSamplingMode 0x1F4011E6
+sceCtrlPeekBufferNegative 0xC152080A
+sceCtrlPeekBufferPositive 0x3A622550
+sceCtrlReadBufferNegative 0x60B81F86
+sceCtrlReadBufferPositive 0x1F803938
