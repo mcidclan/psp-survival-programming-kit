@@ -3,6 +3,7 @@
 
 extern int sceDisplaySetFrameBuf(void*, int, int, int);
 extern int sceDisplaySetMode(int, int, int);
+extern int sceDisplayWaitVblankStart(void);
 
 #endif
 

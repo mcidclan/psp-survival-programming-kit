@@ -1,1 +1,7 @@
+sceKernelDcacheInvalidateRange 0xBFA98062
+sceKernelDcacheWritebackAll 0x79D1C3FA
 sceKernelDcacheWritebackInvalidateAll 0xB435DEC5
+sceKernelDcacheWritebackInvalidateRange 0x34B9FA9E
+sceKernelDcacheWritebackRange 0x3EE30821
+sceKernelIcacheInvalidateAll 0x920F104A
+sceKernelIcacheInvalidateRange 0xC2DF770E

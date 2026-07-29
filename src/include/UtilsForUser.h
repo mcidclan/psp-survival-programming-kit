@@ -1,6 +1,6 @@
-#ifndef THREAD_MAN_FOR_USER_H
-#define THREAD_MAN_FOR_USER_H
+#ifndef UTILS_FOR_USER_H
+#define UTILS_FOR_USER_H
 
 extern void sceKernelDcacheWritebackInvalidateAll(void);
-
+extern int sceKernelDcacheWritebackRange(void*, int);
 #endif
