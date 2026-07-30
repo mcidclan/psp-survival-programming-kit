@@ -1,4 +1,4 @@
-#include "main.h"
+#include <spkit.h>
 
 struct Vertex {
   
@@ -6,7 +6,7 @@ struct Vertex {
   unsigned short x, y, z;
 } __attribute__((aligned(4)));
 
-#define DEPTH_BUF   0x88000
+//#define DEPTH_BUF   0x88000
 #define BUF_WIDTH   512
 #define SCR_WIDTH   480
 #define SCR_HEIGHT  272
@@ -38,8 +38,8 @@ void draw() {
   geSend(0xd2, 3);                                           // frame pixel format
   geSend(0x9c, 0);                                           // frame buffer base pointer
   geSend(0x9d, 0x200);                                       // frame buffer base width
-  geSend(0x9e, DEPTH_BUF);                                   // Set depth buffer base pointer
-  geSend(0x9f, (DEPTH_BUF >> 8) | 0x200);                    // Set depth buffer base width
+  //geSend(0x9e, DEPTH_BUF);                                   // Set depth buffer base pointer
+  //geSend(0x9f, (DEPTH_BUF >> 8) | 0x200);                    // Set depth buffer base width
   
   geSend(0xd4, (20 << 10) | 0);                              // scissor start
   geSend(0xd5, ((SCR_HEIGHT - 21) << 10) | (SCR_WIDTH - 1)); // scissor end
